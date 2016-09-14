@@ -1,0 +1,21 @@
+$scolor:red;
+$class:humman;
+$bg:background;
+body{
+	background:$scolor;
+	div{
+		width:200px;
+		height:200px;
+	}
+	div{
+		#{$bg}:green;
+	}
+	.#{$class}{
+		#{$bg}:red;
+		width:500px;
+		height:500px;
+		&:hover{
+			#{$bg}:green;
+		}
+	}
+}
